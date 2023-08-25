@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- this link is for google font poppins-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/0ddd23bcd0.js" crossorigin="anonymous"></script>  <!-- this link is for font awesome icons-->
+
+</head>
+<body>
+                <!-- this is the top nav bar source code-->
+                <div class="top-nav-style">  <!-- this is a grid that contains 5 divs so the divs are postioned by the grid-->
+                                <div class="">
+                                        <img src="lapo vector.png" class="pad-class" alt="lapo-logo" width="40%" height="85%">
+                                </div>
+                                <div class="mini-centralize">
+                                        <p class="name-px"><b>Hello,</b> Mrs Victory </p>
+                                </div>
+                                <div class="centralize">
+                                        <div>
+                                                <input type="search" placeholder="search" id="search" name="search">
+                                                <span> <i class="fa-solid fa-magnifying-glass" style="color: #0abf12;  width: 50;  height: 50; " ></i></span>
+                                        </div>
+                                </div>
+                                <div class="centralize">
+                                        <div class="inner-circle centralize">
+                                                <i class="fa-solid fa-user fa-xl" style="color: #ff5c00;"></i>
+                                        </div>
+                                </div>
+                                <div class="centralize">
+                                        <i class="fa-solid fa-ellipsis fa-rotate-90 fa-2x dropdwn" style="color: #ff5c00;"></i>
+                                </div>
+                </div>
+
+                     <!-- this is the side bar source code-->
+                <div class="side-bar">
+                        <div class="sb-centralize side-bar-text-color">
+                                <div class="radius"> <!-- this radius class here is used to show that we are on this current page-->
+                                                <span class="space ">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+                                                                <path d="M10.5505 13.5581H14.7707V20.2859H10.5505V13.5581Z" fill="#0ABF12"/>
+                                                                <path d="M21.5441 9.88661L13.4097 2.31298C13.3116 2.2229 13.1949 2.1514 13.0664 2.1026C12.9378 2.05381 12.7999 2.02869 12.6606 2.02869C12.5213 2.02869 12.3834 2.05381 12.2549 2.1026C12.1263 2.1514 12.0096 2.2229 11.9115 2.31298L3.77712 9.89622C3.58029 10.077 3.42483 10.2915 3.31979 10.5275C3.21474 10.7634 3.16219 11.016 3.16519 11.2706V19.3248C3.16437 19.8168 3.37069 20.2904 3.74164 20.648C4.1126 21.0056 4.61996 21.22 5.15923 21.247H8.44043V12.597C8.44043 12.3421 8.55159 12.0976 8.74945 11.9173C8.94731 11.7371 9.21566 11.6358 9.49548 11.6358H15.8258C16.1056 11.6358 16.3739 11.7371 16.5718 11.9173C16.7697 12.0976 16.8808 12.3421 16.8808 12.597V21.247H20.162C20.7013 21.22 21.2086 21.0056 21.5796 20.648C21.9506 20.2904 22.1569 19.8168 22.1561 19.3248V11.2706C22.1569 10.7544 21.9375 10.2582 21.5441 9.88661Z" fill="#0ABF12"/>
+                                                        </svg>
+                                                </span>
+                                                <h3 class="c-page">Dashboard</h3>
+                                </div>
+                        </div>
+                    
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <a href="viewfunds.html">
+                                        <span class="space"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" viewBox="0 0 22 25" fill="none">
+                                                        <path d="M5.89663 6.92314C5.25511 7.2116 1.95589 11.9872 1.06998 13.9103C-0.457438 17.2437 -0.335244 21.859 1.34492 23.5578C2.75014 25.0001 2.84179 25.0001 10.9982 25.0001C19.1546 25.0001 19.2463 25.0001 20.6515 23.5578C22.3011 21.8911 22.4539 17.3398 21.0181 14.0385C20.1933 12.1475 18.4826 9.55134 16.8635 7.75647L15.947 6.73083L11.0899 6.76288C8.43215 6.76288 6.11047 6.85904 5.89663 6.92314ZM11.9147 11.0578C11.9147 11.5065 12.0369 11.859 12.2201 11.859C12.5562 11.859 13.7476 13.1411 13.7476 13.5257C13.7476 13.9744 12.6173 13.8142 12.2201 13.3013C11.3953 12.2437 9.13476 13.077 9.59298 14.2629C9.77627 14.8078 9.89847 14.8719 11.8536 15.3847C14.1752 16.0257 14.7557 18.3334 12.8311 19.4872C12.2507 19.8398 11.9147 20.2885 11.9147 20.7372C11.9147 21.3462 11.7314 21.4744 10.9982 21.4744C10.2345 21.4744 10.0818 21.3462 10.0818 20.7372C10.0818 20.2565 9.80682 19.8398 9.3486 19.6154C8.92092 19.4231 8.43215 18.9744 8.24885 18.5898C7.97392 18.0449 8.00447 17.9488 8.55434 17.9488C8.92092 17.9488 9.40969 18.1731 9.65408 18.4295C10.5705 19.359 12.5256 18.9424 12.5256 17.7885C12.5256 17.0513 11.8536 16.6347 10.0207 16.218C8.92092 15.9616 8.24885 15.1924 8.24885 14.1347C8.24885 13.2693 9.19585 11.859 9.77627 11.859C9.95956 11.859 10.0818 11.5065 10.0818 11.0578C10.0818 10.3847 10.2345 10.2565 10.9982 10.2565C11.7619 10.2565 11.9147 10.3847 11.9147 11.0578Z" fill="white"/>
+                                                        <path d="M9.46424 0.448765C9.12821 0.705175 8.15066 0.961585 7.32585 1.02569C5.61514 1.12184 5.4624 1.44235 5.98172 3.49364L6.31775 4.80774H11.1749H16.0321L16.3682 3.49364C16.8875 1.44235 16.7348 1.12184 15.024 1.02569C14.1992 0.961585 13.2217 0.705175 12.8857 0.448765C12.5496 0.192354 11.7859 4.673e-05 11.1749 4.673e-05C10.564 4.673e-05 9.80027 0.192354 9.46424 0.448765Z" fill="white"/>
+                                                </svg> 
+                                        </span>
+                                        <h3 style="display: inline-block;">View Funds</h3>
+                                </a>       
+                        </div>
+                    
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <a href="Get a mentor.html">
+                                        <span class="space">
+                                                <i class="fa-solid fa-chalkboard-user xl" style="color: #ffffff;"></i>
+                                        </span>
+                                        <h3 style="display: inline-block;">Get a mentor</h3>
+                                </a>
+                        </div>
+                    
+                        <div class="sb-centralize side-bar-text-color dip">
+                                <a href="Profile.html">
+                                        <span class="space">
+                                                <i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i>
+                                        </span>
+                                        <h3 style="display: inline-block;">Profile</h3>
+                                </a>
+                        </div>
+                    
+                        <div class="ent-cntr side-bar-text-color dip">
+                                <p>entrepreneur 2023.</p>
+                        </div>
+               </div>
+
+                <!-- this is the side bar source code-->
+                <div class="centralize right-side">
+                        <div class="centralize Anlyts-sct" >
+                                <h1 class="text-headn" >Funding Analytics</h1>
+                                <div class="img-anlts-cont centralize">
+                                        <img src="./dasnanalytics.jpg" alt="fund-img" class="fund-img" >
+                                </div>
+                        </div>
+                        <div class="Anlyts-sct" >
+                               
+                        </div>
+                        <div class="Anlyts-sct" >
+                               
+                        </div>
+                        <div class="Anlyts-sct" >
+                               
+                        </div>
+                        <div class="Anlyts-sct" >
+                               
+                        </div>
+                        <div class="Anlyts-sct" >
+                               
+                        </div>
+               </div>
+       
+</body>
+</html>
