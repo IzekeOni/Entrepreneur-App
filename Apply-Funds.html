@@ -29,7 +29,9 @@
                                 </div>
                                 <div class="centralize">
                                         <div class="inner-circle centralize">
-                                                <i class="fa-solid fa-user fa-xl" style="color: #ff5c00;"></i>
+                                                <a href="e-Profile.html">
+                                                        <i class="fa-solid fa-user fa-xl" style="color: #ff5c00;"></i>
+                                                </a>
                                         </div>
                                 </div>
                                 <div class="centralize">
@@ -61,7 +63,7 @@
                                         <span class="space">  
                                                 <i class="fa-solid fa-sack-dollar fa-xl" style="color: #0abf12;"></i>
                                         </span>
-                                        <h3 class="c-page">View Funds</h3>
+                                        <h3 class="c-page">Apply Funds</h3>
                                 </div>       
                         </div>
                     
@@ -90,9 +92,15 @@
 
                 <!-- this is the side bar source code-->
                 <div class="centralize right-side">
+                       
                         <div class="centralize af-frow" >
                                  <div class="centralize af-Tact-sct" >
-                                                <h2 class="text-headn">Apply for Funds</h2>
+                                        <div >
+                                                <a href="e-applyfunds.html" class="ea-txt">
+                                                         <i class="fa-solid fa-arrow-right fa-xl fa-rotate-180" style="color: white;"></i>
+                                                </a>    
+                                         </div>
+                                                <h2 class="text-headn"> Apply for Funds</h2>
                                                 <h3 class="text-headn">Fill the form below to apply for Funds</h3>
                                 </div>
                                 <div class="centralize formm" >
@@ -143,7 +151,13 @@
                                                                         </div>
 
                                                                         <div>
-                                                                                <button type="submit" name="Apply" id=Apply" class="af-but-des" required>Apply</button>
+                                                                                <button type="submit" name="Apply" id=Apply" class="af-but-des" onclick="openPopup()">Apply</button>
+                                                                                <div class="pop-up" id="popup"><!--*code for submit pop-up modal-->
+                                                                                        <img src="tick.png" alt="tick-img" class="tick-img">
+                                                                                        <h2>Thank you!</h2>
+                                                                                        <p class="fnt">Your application was successful</p>
+                                                                                        <button type="submit" class="inn-but" onclick="closePopup()"> ok </button>
+                                                                                </div>
                                                                 </div>
                                                         </div>
                          
@@ -151,6 +165,16 @@
                                  </div>
                         </div>
                </div>
-       
+
+               <script>
+                        let popup = document.getElementById("popup")
+
+                        function openPopup(){
+                                popup.classList.add("open-popup")
+                        }
+                        function closePopup(){
+                                popup.classList.remove("open-popup")
+                        }
+               </script>
 </body>
 </html>
