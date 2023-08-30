@@ -19,7 +19,7 @@
                                         <img src="lapo vector.png" class="pad-class" alt="lapo-logo" width="40%" height="85%">
                                 </div>
                                 <div class="mini-centralize">
-                                        <p class="name-px"><b>Hello,</b> Mrs Victory </p>
+                                        <p class="name-px"><b>Hello,</b><%=name%> </p>
                                 </div>
                                 <div class="centralize">
                                         <div>
@@ -39,7 +39,7 @@
                                                         <i class="fa-solid fa-ellipsis fa-rotate-90 fa-2x" style="color: #ff5c00;"></i>
                                                         <div class="dropdown-content">
                                                                 <a href="#">Theme</a>
-                                                                <a href="#">Log out</a>
+                                                                <a href="/Logout">Log out</a>
                                                         </div>
                                                 </div>
                                                 
@@ -63,7 +63,7 @@
                                         <span class="space">  
                                                 <i class="fa-solid fa-sack-dollar fa-xl" style="color: #ffffff;"></i>
                                         </span>
-                                        <h3 class="d-inl">Apply Funds</h3>
+                                        <h3 class="d-inl">Funding</h3>
                                 </a>       
                         </div>
                     
@@ -103,27 +103,31 @@
                                                         <div class="form-fsect">
                                                                 <label for="Business-name" class="">Business name</label>
                                                                 <div>
-                                                                        <input type="text" name="Business-name" id="Business-name" class="gm-inp-types" required >
+                                                                        <input type="text" name="Business-name" id="Business-name" class="gm-inp-types" >
                                                                 </div>
 
                                                                 <label for="Your-business-sector">Your business sector? </label>
                                                                 <div>
-                                                                        <input type="text" name="Your-business-sector" id="Your-business-sector" class="gm-inp-types" required >
+                                                                        <input type="text" name="Your-business-sector" id="Your-business-sector" class="gm-inp-types"  >
                                                                 </div>
 
                                                                 <label for="applied-before">Have you applied for a mentor before ? </label>
                                                                 <div>
-                                                                        <input type="text" name="applied-before" id="applied-before" class="gm-inp-types" required >
+                                                                        <input type="text" name="applied-before" id="applied-before" class="gm-inp-types" >
                                                                 </div>
 
                                                                 <label for="mentor-gender">Mentor gender</label>
                                                                 <div>
-                                                                        <input type="text" name="mentor-gender" id="mentor-gender" class="gm-inp-types" required >
+                                                                        <input type="text" name="mentor-gender" id="mentor-gender" class="gm-inp-types" >
                                                                 </div>
-
                                                                 <div>
-                                                                        <button type="submit" name="Apply" id=Apply" class="gm-but-des" required>Apply</button>
-                                                                        
+                                                                        <button type="submit" name="Apply" id=Apply" class="af-but-des" onclick="openPopup()">Apply</button>
+                                                                        <div class="pop-up" id="popup"><!--*code for submit pop-up modal-->
+                                                                                <img src="tick.png" alt="tick-img" class="tick-img">
+                                                                                <h2>Thank you!</h2>
+                                                                                <p class="fnt">Your application was successful</p>
+                                                                                <button type="submit" class="inn-but" onclick="closePopup()"> ok </button>
+                                                                        </div>
                                                                 </div>
                                                         </div>
                                                 </form>  
@@ -139,8 +143,16 @@
                                                <div class="in-fsect">
                                                         <p>Check our mentor<br>ratings</p>
                                                </div>
-                                               <h4 class="cmr-txt" >Damilola Oni</h4>
+                                               <div class="dropdwn1" >
+                                                <h4 class="cmr-txt" >Damilola Oni</h4>
+                                                        <div class="dropdown-content">
+                                                                <a href="#" class="bio">My name is Damilola Oni and i am a professional mentor, 
+                                                                        equipped with a wealth of experience.
+                                                                </a>
+                                                        </div>
+                                                </div>
                                                 <p class="cmr-txt1">Some quick example text to build <br>on the card title.</p>
+
                                                 <div class="star-pad">
                                                         <i class="fa-solid fa-star" style="color: #0abf12;"></i>
                                                         <i class="fa-solid fa-star" style="color: #0abf12;"></i>
@@ -154,7 +166,14 @@
                                                 <div class="in-fsect">
                                                          <p>Check our mentor<br>ratings</p>
                                                 </div>
-                                                <h4 class="cmr-txt" >Samuel Itoje</h4>
+                                                <div class="dropdwn1" >
+                                                        <h4 class="cmr-txt" >Samuel Itoje</h4>
+                                                                <div class="dropdown-content">
+                                                                        <a href="#" class="bio">My name is Samuel Itoje and i am a professional mentor, 
+                                                                                equipped with a wealth of experience.
+                                                                        </a>
+                                                                </div>
+                                                        </div>
                                                  <p class="cmr-txt1">Some quick example text to build <br>on the card title.</p>
                                                  <div class="star-pad">
                                                          <i class="fa-solid fa-star" style="color: #0abf12;"></i>
@@ -171,6 +190,16 @@
 
 
                </div>
+               <script>
+                let popup = document.getElementById("popup")
+
+                function openPopup(){
+                        popup.classList.add("open-popup")
+                }
+                function closePopup(){
+                        popup.classList.remove("open-popup")
+                }
+       </script>
        
 </body>
 </html>

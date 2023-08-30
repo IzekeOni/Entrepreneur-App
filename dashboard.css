@@ -62,23 +62,24 @@ input[type=search]{
     display: none;
     position: absolute;
     background-color: #ffffff;  
-    min-width: 130px;
+    max-width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     right: 0;
 }
 .dropdown-content a {
+    background-color: white;
     color: #FF5C00;
     padding: 6px 16px;
     text-decoration: none;
-    font-size: 8px;
+    font-size: 17px;
     display: block;
 }
 .dropdown-content a:hover {
     background-color: #FF5C00;
     color: white;
 }
-.dropdwn:hover{
+.dropdwn a:hover{
     cursor: pointer;
 }
 .dropdwn:hover .dropdown-content{
@@ -416,7 +417,7 @@ th, td {
     border: 1px solid#0ABF12;
     border-radius: 5px;
     padding-left: 10px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     box-shadow: 0px 2px 5px 0px rgb(95, 94, 94);
 }
 .gm-but-des{
@@ -560,7 +561,7 @@ th, td {
 .i-both-cont{
     width: 40%;
     height: 700px;
-    backgound-color: #FF5C00;
+    backgrund-color: #FF5C00;
     margin-left: 25px;
 }
 .sgm-hed{
@@ -580,13 +581,13 @@ th, td {
     box-shadow: 0px 2px 5px 0px rgb(95, 94, 94);
 }
 .tw-cont{
-    width: 500px;
+    width: 650px;
 }
 .i-out-sct{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: #0ABF12;
     width: 75%;
-    height: 210px;
+    height: 220px;
     display: inline-block;
     border-radius: 8px;
 }
@@ -625,8 +626,8 @@ th, td {
 .ii-out-sct{
     background-color: rgb(255, 255, 255);
     color: #0ABF12;
-    width: 100%;
-    height: 50%;
+    width: 650px;
+    height: 70%;
     border-radius: 8px;
 }
 .si-in-fsect{
@@ -647,11 +648,30 @@ th, td {
     padding:  0% 4% 2% 4%;
     box-sizing: border-box;
 }
-.txt-ali{
-    text-align: center;
+.d-innline{
+    display: inline-block;
+    margin-right: 130px;
 }
+.txt-ali{
+    display: inline-block;
+    text-align: center;
+} 
 .amr{
     width: 100%;
+}
+.check{
+    width: 25px;
+    height: 25px;
+}
+.brq-submit{
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: #0ABF12;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 0px rgb(95, 94, 94);
 }
 .amr-td{
     background-color: rgb(227, 231, 231);
@@ -659,9 +679,9 @@ th, td {
 
 /*i-portfolio css*/
 .ip-both-cont{
-    width: 80%;
-    height: 600px;
-    backgrond-color: #FF5C00;
+    width: 75%;
+    height: 900px;
+    background-coor: #FF5C00;
     margin-left: 8px;
 }
 .ip-hed{
@@ -677,7 +697,124 @@ th, td {
 .ip-out-sct{
     background-color: white;
     color: #0ABF12;
-    width: 80%;
+    width: 100%;
+    height: 850px;
+    border-radius: 8px;
+}
+
+/*invest more css*/
+.iv-out-sct{
+    background-color: rgb(255, 255, 255);
+    color: #0ABF12;
+    width: 650px;
     height: 80%;
     border-radius: 8px;
+}
+
+
+/*i-mentorship css*/
+.gm-im-formm{
+    width: 80%;
+    height: 75vh;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: #0ABF12;
+    border-radius: 5px;
+}
+.i-m-h3{
+    margin-top: 30px;
+}
+.form-msect{
+    backgroud-color: yellow;
+    width: 50%;
+    height: 90%;
+    margin-top: 20px;
+}
+.gm-txt-inp-types{
+    width: 100%;
+    height: 150px;
+    border: 1px solid#0ABF12;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.im-but-des{
+    background-color: #0ABF12;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 2% 5%;
+    margin-top: 1%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/*mentors-dashboard*/
+.right-side{
+    width: 82%;
+    background-color: #FFF1D4;
+    margin-top: 5%; /*this margin top is working for both the side bar and right-side containers*/
+    margin-left:  18%;  
+}
+.md-frow{
+    backgound-color: violet;
+    padding: 2%;
+    margin: 1%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column
+}
+.group-contt{
+    width: 100%;
+    flex-direction: row;
+    backgrund-color: yellow;
+    padding-top: 10px;
+}
+.group-sboth-cont{
+    width: 40%;
+    height: 600px;
+    backgrund-color: #FF5C00;
+    margin-left: 25px;
+}
+.fmg-big{
+    font-size: 18px;
+}
+
+
+
+/*tooltip, or brief description*/
+.dropdwn1 {
+    position: relative;
+    cursor: pointer;
+  }
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;  
+    max-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content .bio {
+    background-color: #0ABF12;
+    color: white;
+    padding: 6px 16px;
+    text-decoration: none;
+    width: 400px;
+    font-size: 17px;
+    border-radius: 8px;
+    display: block;
+}
+.dropdown-content .bio:hover {
+    background-color: #FF5C00;
+    color: white;
+}
+.dropdwn1:hover{
+    cursor: pointer;
+    display: block;
+}
+.dropdwn1:hover .dropdown-content{
+    display: block;
+    cursor: pointer;
 }

@@ -19,7 +19,7 @@
                                         <img src="lapo vector.png" class="pad-class" alt="lapo-logo" width="40%" height="85%">
                                 </div>
                                 <div class="mini-centralize">
-                                        <p class="name-px"><b>Hello,</b><%=name%> </p>
+                                        <p class="name-px"><b>Hello,</b> <%=name%> </p>
                                 </div>
                                 <div class="centralize">
                                         <div>
@@ -29,7 +29,9 @@
                                 </div>
                                 <div class="centralize">
                                         <div class="inner-circle centralize">
-                                                <i class="fa-solid fa-user fa-xl" style="color: #ff5c00;"></i>
+                                                <a href="#">
+                                                        <i class="fa-solid fa-user fa-xl" style="color: #ff5c00;"></i>
+                                                </a>
                                         </div>
                                 </div>
                                 <div class="centralize">
@@ -66,21 +68,21 @@
                         </div>
                     
                         <div class="sb-centralize side-bar-text-color dip">
-                                <div class="radius"> <!-- this radius class here is used to show that we are on this current page-->
+                            <a href="i-mentorship.html" class="dsh-link">
                                         <span class="space">
-                                                <i class="fa-solid fa-chalkboard-user fa-xl" style="color: #0abf12;"></i>
+                                                <i class="fa-solid fa-chalkboard-user fa-xl" style="color: #ffffff;"></i>
                                         </span>
-                                        <h3 class="c-page">Mentorship</h3>
-                                </div>
+                                        <h3 class="d-inl">Mentorship</h3>
+                                 </a>
                         </div>
                     
                         <div class="sb-centralize side-bar-text-color dip">
-                            <a href="i-profile.html" class="dsh-link">
+                            <div class="radius"> <!-- this radius class here is used to show that we are on this current page-->
                                         <span class="space">
-                                                <i class="fa-solid fa-user fa-xl" style="color:#ffffff ;"></i>
+                                                <i class="fa-solid fa-user fa-xl" style="color: #0abf12;"></i>
                                         </span>
-                                        <h3 class="d-inl">Profile</h3>
-                                 </a>
+                                        <h3 class="c-page">Profile</h3>
+                                 </div>
                         </div>
                     
                         <div class="ent-cntr side-bar-text-color dip">
@@ -91,59 +93,35 @@
                 <!-- this is the side bar source code-->
                 <div class="centralize right-side">
                         <div class="centralize frow" >
-                                <div class="both-cont">
-                                        <div class="centralize gm-hed"> 
-                                                <h3>Become a mentor</h3>
+                                <div class="sboth-cont">
+                                        <div class="centralize mp-hed">
+                                                <h3>My Profile</h3>
                                         </div>
-                                        <div class="centralize gm-im-formm">
-                                                <h2 class="i-m-h3">
-                                                        Mentor Credentials
-                                                </h2>
-                                                <div class="form-msect">
-                                                        <label for="Business-name" >Mentor name:</label>
-                                                        <div>
-                                                                <input type="text" name="Business-name" id="Business-name" class="gm-inp-types" required="">
-                                                        </div>
-                                                
-                                                        <label for="Your-business-sector">Mentor Course: </label>
-                                                        <div>
-                                                                <input type="text" name="Your-business-sector" id="Your-business-sector" class="gm-inp-types" required="">
-                                                        </div>
-                                                
-                                                        <label for="applied-before">Have you mentored before ? </label> 
-                                                        <div>
-                                                                <input type="text" name="mentor-gender" id="mentor-gender" class="gm-inp-types" required="">
-                                                        </div>
-                                                                                                       
-                                                        <label for="mentor-gender">Mentor Profile:  </label>
-                                                        <div>
-                                                                <textarea name="Business-idea-description" id="Business-idea-des"  class="gm-txt-inp-types" placeholder="Description" required></textarea>
+                                        <div class=" centralize mp-out-sct" >
+                                               <div class="mp-in-fsect">
+                                
+                                               </div>
+                                               <h4 class="mp-cmr-txt">Mr Admin</h4>
+                                                <div class="centralize vfp-cont">
+                                                         <div class="mp-in-ssect">
+                                                                <i class="fa-solid fa-pen-to-square fa-xl" style="color: #0abf12;"></i>
+                                                          </div>
+                                                          <div class="mp-in-ssect1">
+                                                                <div class="dropdwn1" >
+                                                                        <p>View full profile</p>
+                                                                                <div class="dropdown-content">
+                                                                                        <a href="#" class="bio"> My name is Dr. Victory and i am a the Chief executive director of 
+                                                                                                Sky Tech Limited
+                                                                                        </a>
+                                                                                </div>
+                                                                 </div>
                                                          </div>
-                                                        <div>
-                                                                <button type="submit" name="Apply" id=Apply" class="im-but-des" onclick="openPopup()">Apply</button>
-                                                                <div class="pop-up" id="popup"><!--*code for submit pop-up modal-->
-                                                                        <img src="tick.png" alt="tick-img" class="tick-img">
-                                                                        <h2>Thank you!</h2>
-                                                                        <p class="fnt">Your application was successful</p>
-                                                                        <button type="submit" class="inn-but" onclick="closePopup()"> ok </button>
-                                                                </div>
-                                                        </div>
+                                               
+                                                 </div> 
 
-                                                </div>
-                                                </form> 
-                                        </div> 
                                 </div>
                        </div>
                </div>
-<script>
-                        let popup = document.getElementById("popup")
-
-                        function openPopup(){
-                                popup.classList.add("open-popup")
-                        }
-                        function closePopup(){
-                                popup.classList.remove("open-popup")
-                        }
-               </script>
+       
 </body>
 </html>

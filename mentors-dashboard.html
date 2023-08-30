@@ -19,7 +19,7 @@
                                         <img src="lapo vector.png" class="pad-class" alt="lapo-logo" width="40%" height="85%">
                                 </div>
                                 <div class="mini-centralize">
-                                        <p class="name-px"><b>Hello,</b> Mrs Victory </p>
+                                        <p class="name-px"><b>Hello,</b><%=name%> </p>
                                 </div>
                                 <div class="centralize">
                                         <div>
@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="centralize">
                                         <div class="inner-circle centralize">
-                                                <a href="e-Profile.html">
+                                                <a href="mentor-profile.html">
                                                         <i class="fa-solid fa-user fa-xl" style="color: #ff5c00;"></i>
                                                 </a>
                                         </div>
@@ -39,7 +39,7 @@
                                                         <i class="fa-solid fa-ellipsis fa-rotate-90 fa-2x" style="color: #ff5c00;"></i>
                                                         <div class="dropdown-content">
                                                                 <a href="#">Theme</a>
-                                                                <a href="#">Log out</a>
+                                                                <a href="/Logout">Log out</a>
                                                         </div>
                                                 </div>
                                                 
@@ -50,16 +50,16 @@
                      <!-- this is the side bar source code-->
                 <div class="side-bar">
                         <div class="sb-centralize side-bar-text-color dip">
-                            <a href="i-dashboard.html" class="dsh-link">
+                                <div class="radius"> <!-- this radius class here is used to show that we are on this current page-->
                                                 <span class="space ">
-                                                        <i class="fa-sharp fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
+                                                        <i class="fa-sharp fa-solid fa-house fa-xl" style="color: #0abf12;"></i>
                                                 </span>
-                                                <h3 class="d-inl">Dashboard</h3>
-                                 </a>
+                                                <h3 class="c-page">Dashboard</h3>
+                                  </div>
                         </div>
                     
                         <div class="sb-centralize side-bar-text-color dip">
-                            <a href="i-mentorship.html" class="dsh-link">
+                            <a href="mentorship-page.html" class="dsh-link">
                                         <span class="space">
                                                 <i class="fa-solid fa-chalkboard-user fa-xl" style="color: #ffffff;"></i>
                                         </span>
@@ -68,12 +68,12 @@
                         </div>
                     
                         <div class="sb-centralize side-bar-text-color dip">
-                            <div class="radius"> <!-- this radius class here is used to show that we are on this current page-->
+                           <a href="mentor-profile.html" class="dsh-link">
                                         <span class="space">
-                                                <i class="fa-solid fa-user fa-xl" style="color: #0abf12;"></i>
+                                                <i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i>
                                         </span>
-                                        <h3 class="c-page">Profile</h3>
-                                 </div>
+                                        <h3  class="d-inl">Profile</h3>
+                                </a>
                         </div>
                     
                         <div class="ent-cntr side-bar-text-color dip">
@@ -83,30 +83,101 @@
 
                 <!-- this is the side bar source code-->
                 <div class="centralize right-side">
-                        <div class="centralize frow" >
-                                <div class="sboth-cont">
-                                        <div class="centralize mp-hed">
-                                                <h3>My Profile</h3>
+                        <div class="centralize md-frow" >
+                                <div class="centralize group-contt">
+                                <div class="group-sboth-cont">
+                                        <div class="centralize sgm-hed">
+                                                <h3>Onboard Mentees</h3>
                                         </div>
-                                        <div class=" centralize mp-out-sct" >
-                                               <div class="mp-in-fsect">
-                                
+                                        <div class="out-sct" >
+                                               <div class="in-fsect">
+                                                        <p class="fmg-big">Finance Mentorship <br>Group</p>
                                                </div>
-                                               <h4 class="mp-cmr-txt" >Mrs Victory Osazuwa-Joy</h4>
-                                                <p class="cmr-txt1">CEO. Sky Tech Limited</p>
-                                                <div class="centralize vfp-cont">
-                                                         <div class="mp-in-ssect">
-                                                                <i class="fa-solid fa-pen-to-square fa-xl" style="color: #0abf12;"></i>
-                                                          </div>
-                                                         <div class="mp-in-ssect1">
-                                                                <p>View full profile</p>
-                                                        </div>
-                                                </div>
-                                               
+                                               <h4 class="cmr-txt" >Join our Finance Mentorship group</h4>
+                                                <p class="cmr-txt1">Damilola Joined <br> Samuel Joined <br> Victory Joined</p>
                                         </div> 
 
+                                        <div class="out-sct mt" >
+                                                        <div class="in-fsect">
+                                                                 <p class="fmg-big">Aviation Mentorship <br>Group</p>
+                                                        </div>
+                                                        <h4 class="cmr-txt" >Join our Aviation Mentorship group</h4>
+                                                         <p class="cmr-txt1">Peter Joined <br>Amaka Joined <br>Iyanu Joined</p>
+                                         </div> 
                                 </div>
+
+                                <div class="sboth-cont">
+                                        <div class="centralize sgm-hed">
+                                                <h3>Onboard Mentees</h3>
+                                        </div>
+                                        <div class="out-sct" >
+                                               <div class="in-fsect">
+                                                        <p class="fmg-big">Tech Mentorship <br>Group</p>
+                                               </div>
+                                               <h4 class="cmr-txt" >Join our Tech Mentorship group</h4>
+                                                <p class="cmr-txt1">Abdulsamad Joined <br> Maguire Joined <br> Ronaldo Joined</p>
+                                        </div> 
+
+                                        <div class="out-sct mt" >
+                                                        <div class="in-fsect">
+                                                                 <p class="fmg-big">Bio-Tech Mentorship <br>Group</p>
+                                                        </div>
+                                                        <h4 class="cmr-txt" >Join our Bio-Tech Mentorship group</h4>
+                                                         <p class="cmr-txt1">Prosper Joined<br> Nwanchukwu Joined  <br> Kolade Joined</p>
+                                         </div> 
+
+                                         
+                                </div>
+                                </div>
+
+                                <div class="centralize group-contt">
+                                        <div class="sboth-cont">
+                                       <div class="centralize sgm-hed">
+                                               <h3>Onboard Mentees</h3>
+                                       </div>
+                                       <div class="out-sct" >
+                                              <div class="in-fsect">
+                                                       <p class="fmg-big">Finance Mentorship <br>Group</p>
+                                              </div>
+                                              <h4 class="cmr-txt" >Join our Finance Mentorship group</h4>
+                                               <p class="cmr-txt1">Damilola Joined <br> Samuel Joined <br> Victory Joined</p>
+                                       </div> 
+
+                                       <div class="out-sct mt" >
+                                                       <div class="in-fsect">
+                                                                <p class="fmg-big">Aviation Mentorship <br>Group</p>
+                                                       </div>
+                                                       <h4 class="cmr-txt" >Join our Aviation Mentorship group</h4>
+                                                        <p class="cmr-txt1">Peter Joined <br>Amaka Joined <br>Iyanu Joined</p>
+                                        </div> 
+                               </div>
+
+                               <div class="sboth-cont">
+                                       <div class="centralize sgm-hed">
+                                               <h3>Onboard Mentees</h3>
+                                       </div>
+                                       <div class="out-sct" >
+                                              <div class="in-fsect">
+                                                       <p class="fmg-big">Tech Mentorship <br>Group</p>
+                                              </div>
+                                              <h4 class="cmr-txt" >Join our Tech Mentorship group</h4>
+                                               <p class="cmr-txt1">Abdulsamad Joined <br> Maguire Joined <br> Ronaldo Joined</p>
+                                       </div> 
+
+                                       <div class="out-sct mt" >
+                                                       <div class="in-fsect">
+                                                                <p class="fmg-big">Bio-Tech Mentorship <br>Group</p>
+                                                       </div>
+                                                       <h4 class="cmr-txt" >Join our Bio-Tech Mentorship group</h4>
+                                                        <p class="cmr-txt1">Prosper Joined<br> Nwanchukwu Joined  <br> Kolade Joined</p>
+                                        </div> 
+
+                                        
+                               </div>
+                               </div>
+                               
                        </div>
+                       
                </div>
        
 </body>
